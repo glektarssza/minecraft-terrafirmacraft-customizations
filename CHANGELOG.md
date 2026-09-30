@@ -1,5 +1,11 @@
 # Changelog #
 
+## v0.2.0 ##
+
+### Technical ###
+
+* Refactored internals.
+
 ## v0.1.1 ##
 
 ### Bug Fixes ###

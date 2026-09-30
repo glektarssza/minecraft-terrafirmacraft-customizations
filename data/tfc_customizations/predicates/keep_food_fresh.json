@@ -2,6 +2,6 @@
     "condition": "entity_scores",
     "entity": "this",
     "scores": {
-        "tfc_keep_food_fresh": 1
+        "tfc_c_keep_food_fresh": 1
     }
 }
