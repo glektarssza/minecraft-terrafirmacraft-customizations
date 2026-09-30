@@ -1,0 +1,51 @@
+{
+    "folders": [
+        {
+            "name": "TerraFirmaCraft Customizations",
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "[json]": {
+            "editor.formatOnPaste": true,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+            "editor.formatOnPaste": true,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonl]": {
+            "editor.formatOnPaste": true,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[shellscript]": {
+            "editor.formatOnPaste": true,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "file",
+            "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+        },
+        "bashIde.globPattern": "**/*@(.sh|.inc|.bash|.command|.zsh)",
+        "bashIde.includeAllWorkspaceSymbols": true,
+        "bashIde.shellcheckArguments": "",
+        "bashIde.shellcheckExternalSources": true,
+        "bashIde.shellcheckPath": "<$env:HOME>/scoop/apps/shellcheck/current/shellcheck.exe",
+        "bashIde.shfmt.additionalArguments": [],
+        "bashIde.shfmt.binaryNextLine": true,
+        "bashIde.shfmt.caseIndent": true,
+        "bashIde.shfmt.funcNextLine": false,
+        "bashIde.shfmt.ignoreEditorconfig": false,
+        "bashIde.shfmt.keepPadding": false,
+        "bashIde.shfmt.languageDialect": "auto",
+        "bashIde.shfmt.path": "<$env:HOME>/scoop/apps/shfmt/current/shfmt.exe",
+        "bashIde.shfmt.simplifyCode": true,
+        "bashIde.shfmt.spaceRedirects": true,
+        "prettier.configPath": ".prettierrc.mjs",
+        "prettier.ignorePath": ".prettierignore"
+    }
+}
