@@ -63,7 +63,7 @@ jobs:
     uses: ./.github/workflows/build.yaml
     with:
       ref: ${{inputs.ref}}
-      release-build: true
+      build-type: 'release'
       upload-artifacts: true
       artifact-retention-days: ${{inputs.artifact-retention-days}}
     secrets:

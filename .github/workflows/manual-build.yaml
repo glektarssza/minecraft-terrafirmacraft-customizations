@@ -3,11 +3,17 @@ name: Manual Build
 on:
   workflow_dispatch:
     inputs:
-      release-build:
+      build-type:
         description: |
-          Whether to make a release build.
-        type: boolean
-        default: false
+          The type of build to create.
+
+          Valid options are:
+           * 'release'
+           * 'dev'
+
+          Defaults to 'release'.
+        type: string
+        default: 'release'
         required: false
       artifact-retention-days:
         description: |
@@ -27,7 +33,7 @@ jobs:
     uses: ./.github/workflows/build.yaml
     with:
       ref: ${{github.sha}}
-      release-build: ${{inputs.release-build}}
+      build-type: ${{inputs.build-type}}
       upload-artifacts: true
       artifact-retention-days: ${{inputs.artifact-retention-days}}
     secrets:

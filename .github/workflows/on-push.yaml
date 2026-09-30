@@ -16,7 +16,7 @@ jobs:
     uses: ./.github/workflows/build.yaml
     with:
       ref: ${{github.sha}}
-      release-build: false
+      build-type: 'dev'
       upload-artifacts: true
     secrets:
       github-token: ${{secrets.GITHUB_TOKEN}}
