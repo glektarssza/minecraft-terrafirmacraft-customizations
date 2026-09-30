@@ -151,6 +151,8 @@ function lib::sgr::24bit_fg() {
 # `1` - If one of the color code was not provided.
 # `2` - If one of the color code was outside the allowed range.
 # `...` - The result of calling `printf`.
+# === Notes ===
+# Sourced from https://unix.stackexchange.com/a/655825
 function lib::sgr::24bit_bg() {
     if [[ -z $1 || -z $2 || -z $3 ]]; then
         return 1
