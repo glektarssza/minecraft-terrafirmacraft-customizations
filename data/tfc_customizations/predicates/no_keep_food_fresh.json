@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:inverted",
+    "term": {
+        "condition": "minecraft:reference",
+        "name": "tfc_customizations:keep_food_fresh"
+    }
+}

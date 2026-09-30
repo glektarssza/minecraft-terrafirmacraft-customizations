@@ -1,0 +1,10 @@
+{
+    "env": {
+        "gameVersion": "Auto",
+        "enableMcdocCaching": false,
+        "feature": {
+            "semanticColoring": false
+        },
+        "permissionLevel": 2
+    }
+}
