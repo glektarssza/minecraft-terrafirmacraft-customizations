@@ -43,6 +43,9 @@ source "${_LIB_PATH}/boolean.sh"
 function lib::paths::relative_path() {
     local REPLY
     set -- "${1%/}/" "${2%/}/"
+    while [ "$1" ] && [ "$2" = "${2#"$1"}" ]; do
+        set -- "${1%/?*/}/" "$2" "../$3"
+    done
     REPLY="${2#"$1"}"
     if [ "${REPLY#/}" ]; then
         REPLY="${REPLY%/}"

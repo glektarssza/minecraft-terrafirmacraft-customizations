@@ -174,9 +174,9 @@ if [[ -f "${ARCHIVE_NAME}" ]]; then
 fi
 
 zip -9 -ll -UN=UTF8 -r "${DIST_FOLDER}/$(basename "${PROJECT_ROOT}")-${VERSION}.zip" \
-    "$(lib::paths::relative_path "${PROJECT_ROOT}/data/" "${PROJECT_ROOT}")" \
-    "$(lib::paths::relative_path "${PROJECT_ROOT}/pack.mcmeta" "${PROJECT_ROOT}")" \
-    "$(lib::paths::relative_path "${PROJECT_ROOT}/pack.png" "${PROJECT_ROOT}")"
+    "$(lib::paths::relative_path "${PROJECT_ROOT}" "${PROJECT_ROOT}/data")" \
+    "$(lib::paths::relative_path "${PROJECT_ROOT}" "${PROJECT_ROOT}/pack.mcmeta")" \
+    "$(lib::paths::relative_path "${PROJECT_ROOT}" "${PROJECT_ROOT}/pack.png")"
 
 # shellcheck disable=SC2164
 popd > /dev/null 2>&1
